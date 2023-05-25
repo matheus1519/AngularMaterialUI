@@ -1,0 +1,52 @@
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 24px;
+
+  > div {
+    position: relative;
+    overflow: hidden;
+
+    width: 50%;
+    height: fit-content;
+
+    background: #fafafa;
+
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+
+    padding: 32px;
+
+    > * {
+      width: 100%;
+    }
+
+    > h1 {
+      text-align: center;
+    }
+
+    > textarea {
+      resize: none;
+    }
+
+    > mat-radio-group {
+      display: grid;
+    }
+
+    > mat-slider {
+      width: -webkit-fill-available;
+    }
+
+    > section {
+      display: grid;
+    }
+
+    > mat-progress-bar {
+      position: absolute;
+
+      bottom: 0;
+    }
+  }
+}
